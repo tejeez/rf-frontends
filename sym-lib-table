@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name fem)(type Legacy)(uri /home/peltolt2/kicad/fem/wififem/fem.lib)(options "")(descr ""))
+)
