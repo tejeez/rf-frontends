@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:wififem-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -206,7 +207,7 @@ U 1 1 5A15EA7A
 P 5800 1550
 F 0 "R8" H 5870 1596 50  0000 L CNN
 F 1 "100" H 5870 1505 50  0000 L CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 5730 1550 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5730 1550 50  0001 C CNN
 F 3 "" H 5800 1550 50  0001 C CNN
 	1    5800 1550
 	1    0    0    -1  
@@ -217,7 +218,7 @@ U 1 1 5A15EEDA
 P 6100 1550
 F 0 "R9" H 6170 1596 50  0000 L CNN
 F 1 "100" H 6170 1505 50  0000 L CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 6030 1550 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6030 1550 50  0001 C CNN
 F 3 "" H 6100 1550 50  0001 C CNN
 	1    6100 1550
 	1    0    0    -1  
@@ -233,75 +234,6 @@ F 3 "" H 6400 1550 50  0001 C CNN
 	1    6400 1550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8400 3950 8500 3950
-Wire Wire Line
-	7800 3950 7700 3950
-Wire Wire Line
-	6600 3950 7100 3950
-Wire Wire Line
-	6950 3700 6950 3950
-Connection ~ 6950 3950
-Wire Wire Line
-	6650 3700 6650 3950
-Connection ~ 6650 3950
-Wire Wire Line
-	6450 3400 6950 3400
-Connection ~ 6650 3400
-Wire Wire Line
-	5500 3650 6450 3650
-Wire Wire Line
-	6450 3400 6450 3650
-Wire Wire Line
-	5500 3200 5500 3150
-Wire Wire Line
-	5600 3200 5600 3150
-Wire Wire Line
-	5200 2000 4900 2000
-Wire Wire Line
-	4900 2000 4900 1700
-Wire Wire Line
-	5200 1700 5200 1950
-Wire Wire Line
-	5200 1950 5300 1950
-Wire Wire Line
-	5300 1950 5300 2000
-Wire Wire Line
-	5400 2000 5400 1700
-Wire Wire Line
-	5400 1700 5500 1700
-Wire Wire Line
-	5800 1700 5800 1750
-Wire Wire Line
-	5800 1750 5500 1750
-Wire Wire Line
-	5500 1750 5500 2000
-Wire Wire Line
-	5700 2000 5700 1800
-Wire Wire Line
-	5700 1800 6100 1800
-Wire Wire Line
-	6100 1800 6100 1700
-Wire Wire Line
-	6400 1700 6400 1850
-Wire Wire Line
-	6400 1850 5800 1850
-Wire Wire Line
-	5800 1850 5800 2000
-Wire Wire Line
-	6100 1400 6100 1300
-Wire Wire Line
-	4900 1300 8450 1300
-Wire Wire Line
-	4900 1300 4900 1400
-Wire Wire Line
-	5200 1400 5200 1200
-Wire Wire Line
-	5200 1200 9100 1200
-Wire Wire Line
-	6400 1200 6400 1400
-Wire Wire Line
-	5500 1400 5800 1400
 $Comp
 L power:GND #PWR07
 U 1 1 5A162B2B
@@ -313,18 +245,6 @@ F 3 "" H 5500 950 50  0001 C CNN
 	1    5500 950 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5700 1400 5700 950 
-Wire Wire Line
-	5700 950  5500 950 
-Connection ~ 5700 1400
-Wire Wire Line
-	8450 1300 8450 3950
-Connection ~ 8450 3950
-Connection ~ 6100 1300
-Wire Wire Line
-	9100 3950 9100 1200
-Connection ~ 6400 1200
 $Comp
 L Logic_74xx:74HCT04 U2
 U 7 1 5A165E06
@@ -369,10 +289,6 @@ F 3 "" H 7900 2850 50  0001 C CNN
 	1    7900 2850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7550 2650 7750 2650
-Wire Wire Line
-	7250 2650 6300 2650
 $Comp
 L pspice:INDUCTOR L3
 U 1 1 5A168C35
@@ -384,7 +300,6 @@ F 3 "" H 7600 2250 50  0001 C CNN
 	1    7600 2250
 	0    1    1    0   
 $EndComp
-Connection ~ 7600 2650
 $Comp
 L device:C C4
 U 1 1 5A169C8A
@@ -396,8 +311,6 @@ F 3 "" H 7350 2000 50  0001 C CNN
 	1    7350 2000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7500 2000 7600 2000
 $Comp
 L power:GND #PWR09
 U 1 1 5A16AD75
@@ -407,32 +320,6 @@ F 1 "GND" H 7205 1827 50  0000 C CNN
 F 2 "" H 7200 2000 50  0001 C CNN
 F 3 "" H 7200 2000 50  0001 C CNN
 	1    7200 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7600 2500 7600 2650
-$Comp
-L Connector:Conn_Coaxial J4
-U 1 1 5A16C2C9
-P 8100 1500
-F 0 "J4" H 8199 1476 50  0000 L CNN
-F 1 "Conn_Coaxial" H 8199 1385 50  0000 L CNN
-F 2 "Connectors:SMA_THT_Jack_Straight" H 8100 1500 50  0001 C CNN
-F 3 "" H 8100 1500 50  0001 C CNN
-	1    8100 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7950 1500 7600 1500
-$Comp
-L power:GND #PWR010
-U 1 1 5A16D4C2
-P 8100 1700
-F 0 "#PWR010" H 8100 1450 50  0001 C CNN
-F 1 "GND" H 8105 1527 50  0000 C CNN
-F 2 "" H 8100 1700 50  0001 C CNN
-F 3 "" H 8100 1700 50  0001 C CNN
-	1    8100 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -457,10 +344,6 @@ F 3 "" H 3950 2800 50  0001 C CNN
 	1    3950 2800
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	4100 2800 5000 2800
-Wire Wire Line
-	3800 2650 5000 2650
 $Comp
 L power:GND #PWR011
 U 1 1 5A16FC25
@@ -516,12 +399,6 @@ F 3 "" H 4550 2350 50  0001 C CNN
 	1    4550 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4550 2350 4600 2350
-Wire Wire Line
-	5000 2500 5000 2350
-Wire Wire Line
-	5000 2350 4900 2350
 $Comp
 L device:C C3
 U 1 1 5A1790C5
@@ -545,28 +422,16 @@ F 3 "" H 6300 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pspice:INDUCTOR L2
-U 1 1 5A17ACD2
-P 7600 1750
-F 0 "L2" V 7554 1828 50  0000 L CNN
-F 1 "2.4 GHz choke" V 7645 1828 50  0000 L CNN
-F 2 "Inductors_SMD:L_0805_HandSoldering" H 7600 1750 50  0001 C CNN
-F 3 "" H 7600 1750 50  0001 C CNN
-	1    7600 1750
-	0    1    1    0   
-$EndComp
-$Comp
 L pspice:INDUCTOR L1
 U 1 1 5A17AD26
 P 6650 2000
 F 0 "L1" H 6650 1822 50  0000 C CNN
-F 1 "2.4 GHz choke" H 6650 1913 50  0000 C CNN
+F 1 "ferrite bead" H 6650 1913 50  0000 C CNN
 F 2 "Inductors_SMD:L_0805_HandSoldering" H 6650 2000 50  0001 C CNN
 F 3 "" H 6650 2000 50  0001 C CNN
 	1    6650 2000
 	-1   0    0    1   
 $EndComp
-Connection ~ 6300 2000
 $Comp
 L power:+3V3 #PWR015
 U 1 1 5A17CF72
@@ -578,8 +443,6 @@ F 3 "" H 6900 1550 50  0001 C CNN
 	1    6900 1550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 2000 6400 2000
 $Comp
 L device:C C6
 U 1 1 5A184860
@@ -607,24 +470,12 @@ L pspice:INDUCTOR L4
 U 1 1 5A18492E
 P 6900 2200
 F 0 "L4" H 6900 2022 50  0000 C CNN
-F 1 "2.4 GHz choke" H 6900 2113 50  0000 C CNN
+F 1 "ferrite bead" H 6900 2113 50  0000 C CNN
 F 2 "Inductors_SMD:L_0805_HandSoldering" H 6900 2200 50  0001 C CNN
 F 3 "" H 6900 2200 50  0001 C CNN
 	1    6900 2200
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6900 2000 7150 2000
-Wire Wire Line
-	7150 2000 7150 2200
-Wire Wire Line
-	6650 2200 6650 1950
-Wire Wire Line
-	6650 1950 6000 1950
-Wire Wire Line
-	6000 1950 6000 2000
-Wire Wire Line
-	4150 2800 4150 2950
 $Comp
 L device:D_Schottky_x2_KCom_AAK D1
 U 1 1 5A18CEB6
@@ -636,8 +487,6 @@ F 3 "" H 4150 3800 50  0001 C CNN
 	1    4150 3800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4150 3250 4150 3500
 $Comp
 L power:GND #PWR018
 U 1 1 5A18EFB6
@@ -649,18 +498,6 @@ F 3 "" H 3950 3800 50  0001 C CNN
 	1    3950 3800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3900 3500 4350 3500
-Wire Wire Line
-	3900 4100 4350 4100
-Wire Wire Line
-	4650 3500 6000 3500
-Wire Wire Line
-	6000 3500 6000 3850
-Wire Wire Line
-	6000 4050 4650 4050
-Wire Wire Line
-	4650 4050 4650 4100
 $Comp
 L device:R R11
 U 1 1 5A1979CF
@@ -683,10 +520,6 @@ F 3 "" H 3750 4100 50  0001 C CNN
 	1    3750 4100
 	0    -1   -1   0   
 $EndComp
-Connection ~ 4150 3500
-Connection ~ 4150 4100
-Wire Wire Line
-	3600 3500 3600 4100
 $Comp
 L power:+3V3 #PWR019
 U 1 1 5A19E619
@@ -698,9 +531,6 @@ F 3 "" H 3400 3850 50  0001 C CNN
 	1    3400 3850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3400 3850 3600 3850
-Connection ~ 3600 3850
 $Comp
 L regul:AP1117-15 U4
 U 1 1 5A1A47EC
@@ -723,8 +553,6 @@ F 3 "" H 6000 4900 50  0001 C CNN
 	1    6000 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 4900 5900 4900
 $Comp
 L power:GND #PWR021
 U 1 1 5A1A6D47
@@ -736,8 +564,6 @@ F 3 "" H 5600 5250 50  0001 C CNN
 	1    5600 5250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5600 5250 5600 5200
 $Comp
 L device:C C9
 U 1 1 5A1AA377
@@ -771,8 +597,6 @@ F 3 "" H 5000 5050 50  0001 C CNN
 	1    5000 5050
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5300 4900 5000 4900
 $Comp
 L power:GND #PWR023
 U 1 1 5A1ACCE4
@@ -795,7 +619,6 @@ F 3 "" H 5500 3800 50  0001 C CNN
 	1    5500 3800
 	-1   0    0    1   
 $EndComp
-Connection ~ 6200 3650
 $Comp
 L power:GND #PWR024
 U 1 1 5A1B10BA
@@ -818,15 +641,6 @@ F 3 "" H 7100 5000 50  0001 C CNN
 	1    7100 5000
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	7650 4550 7100 4550
-Wire Wire Line
-	7100 4550 7100 4850
-Wire Wire Line
-	7650 5550 7100 5550
-Wire Wire Line
-	7100 5550 7100 5150
-Connection ~ 4150 2800
 $Comp
 L pspice:INDUCTOR L5
 U 1 1 5A1BC783
@@ -838,7 +652,6 @@ F 3 "" H 4700 3050 50  0001 C CNN
 	1    4700 3050
 	0    -1   -1   0   
 $EndComp
-Connection ~ 4700 2800
 $Comp
 L power:GND #PWR017
 U 1 1 5A1C03BF
@@ -894,9 +707,6 @@ F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 9950 3300 50  000
 	3    9950 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9650 2100 9650 3300
-Connection ~ 9650 2700
 $Comp
 L power:GND #PWR025
 U 1 1 5A1CD3BC
@@ -930,6 +740,362 @@ F 3 "" H 6900 1700 50  0001 C CNN
 	1    6900 1700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x05 J4
+U 1 1 5A160C10
+P 3300 4750
+F 0 "J4" H 3380 4792 50  0000 L CNN
+F 1 "Conn_01x05" H 3380 4701 50  0000 L CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x05_Pitch2.54mm" H 3300 4750 50  0001 C CNN
+F 3 "~" H 3300 4750 50  0001 C CNN
+	1    3300 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5A161357
+P 3550 5000
+F 0 "#PWR010" H 3550 4750 50  0001 C CNN
+F 1 "GND" H 3555 4827 50  0000 C CNN
+F 2 "" H 3550 5000 50  0001 C CNN
+F 3 "" H 3550 5000 50  0001 C CNN
+	1    3550 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D2
+U 1 1 5A16DF40
+P 4500 5100
+F 0 "D2" V 4546 4972 50  0000 R CNN
+F 1 "DIODE" V 4455 4972 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 4500 5100 50  0001 C CNN
+F 3 "" H 4500 5100 50  0001 C CNN
+	1    4500 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 5A176B26
+P 4500 5300
+F 0 "#PWR026" H 4500 5050 50  0001 C CNN
+F 1 "GND" H 4505 5127 50  0000 C CNN
+F 2 "" H 4500 5300 50  0001 C CNN
+F 3 "" H 4500 5300 50  0001 C CNN
+	1    4500 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L6
+U 1 1 5A178051
+P 4000 4900
+F 0 "L6" H 4000 4722 50  0000 C CNN
+F 1 "ferrite bead" H 4000 4813 50  0000 C CNN
+F 2 "Inductors_SMD:L_0805_HandSoldering" H 4000 4900 50  0001 C CNN
+F 3 "" H 4000 4900 50  0001 C CNN
+	1    4000 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8400 3950 8450 3950
+Wire Wire Line
+	8450 3950 8500 3950
+Wire Wire Line
+	7800 3950 7700 3950
+Wire Wire Line
+	6600 3950 6650 3950
+Wire Wire Line
+	6650 3950 6950 3950
+Wire Wire Line
+	6950 3950 7100 3950
+Wire Wire Line
+	6950 3700 6950 3950
+Connection ~ 6950 3950
+Wire Wire Line
+	6650 3700 6650 3950
+Connection ~ 6650 3950
+Wire Wire Line
+	6450 3400 6650 3400
+Wire Wire Line
+	6650 3400 6950 3400
+Connection ~ 6650 3400
+Wire Wire Line
+	5500 3650 6200 3650
+Wire Wire Line
+	6200 3650 6450 3650
+Wire Wire Line
+	6450 3400 6450 3650
+Wire Wire Line
+	5500 3200 5500 3150
+Wire Wire Line
+	5600 3200 5600 3150
+Wire Wire Line
+	5200 2000 4900 2000
+Wire Wire Line
+	4900 2000 4900 1700
+Wire Wire Line
+	5200 1700 5200 1950
+Wire Wire Line
+	5200 1950 5300 1950
+Wire Wire Line
+	5300 1950 5300 2000
+Wire Wire Line
+	5400 2000 5400 1700
+Wire Wire Line
+	5400 1700 5500 1700
+Wire Wire Line
+	5800 1700 5800 1750
+Wire Wire Line
+	5800 1750 5500 1750
+Wire Wire Line
+	5500 1750 5500 2000
+Wire Wire Line
+	5700 2000 5700 1800
+Wire Wire Line
+	5700 1800 6100 1800
+Wire Wire Line
+	6100 1800 6100 1700
+Wire Wire Line
+	6400 1700 6400 1850
+Wire Wire Line
+	6400 1850 5800 1850
+Wire Wire Line
+	5800 1850 5800 2000
+Wire Wire Line
+	6100 1400 6100 1300
+Wire Wire Line
+	4900 1300 6100 1300
+Wire Wire Line
+	6100 1300 8450 1300
+Wire Wire Line
+	4900 1300 4900 1400
+Wire Wire Line
+	5200 1400 5200 1200
+Wire Wire Line
+	5200 1200 6400 1200
+Wire Wire Line
+	6400 1200 9100 1200
+Wire Wire Line
+	6400 1200 6400 1400
+Wire Wire Line
+	5500 1400 5700 1400
+Wire Wire Line
+	5700 1400 5800 1400
+Wire Wire Line
+	5700 1400 5700 950 
+Wire Wire Line
+	5700 950  5500 950 
+Connection ~ 5700 1400
+Wire Wire Line
+	8450 1300 8450 3950
+Connection ~ 8450 3950
+Connection ~ 6100 1300
+Wire Wire Line
+	9100 3950 9100 1200
+Connection ~ 6400 1200
+Wire Wire Line
+	7550 2650 7600 2650
+Wire Wire Line
+	7600 2650 7750 2650
+Wire Wire Line
+	7250 2650 6300 2650
+Connection ~ 7600 2650
+Wire Wire Line
+	7500 2000 9250 2000
+Wire Wire Line
+	7600 2500 7600 2650
+Wire Wire Line
+	4100 2800 4150 2800
+Wire Wire Line
+	4150 2800 4700 2800
+Wire Wire Line
+	4700 2800 5000 2800
+Wire Wire Line
+	3800 2650 5000 2650
+Wire Wire Line
+	4550 2350 4600 2350
+Wire Wire Line
+	5000 2500 5000 2350
+Wire Wire Line
+	5000 2350 4900 2350
+Connection ~ 6300 2000
+Wire Wire Line
+	6100 2000 6300 2000
+Wire Wire Line
+	6300 2000 6400 2000
+Wire Wire Line
+	6900 2000 7150 2000
+Wire Wire Line
+	7150 2000 7150 2200
+Wire Wire Line
+	6650 2200 6650 1950
+Wire Wire Line
+	6650 1950 6000 1950
+Wire Wire Line
+	6000 1950 6000 2000
+Wire Wire Line
+	4150 2800 4150 2950
+Wire Wire Line
+	4150 3250 4150 3500
+Wire Wire Line
+	3900 3500 4150 3500
+Wire Wire Line
+	4150 3500 4350 3500
+Wire Wire Line
+	3900 4100 4150 4100
+Wire Wire Line
+	4150 4100 4350 4100
+Wire Wire Line
+	4650 3500 6000 3500
+Wire Wire Line
+	6000 3500 6000 3850
+Wire Wire Line
+	6000 4050 4650 4050
+Wire Wire Line
+	4650 4050 4650 4100
+Connection ~ 4150 3500
+Connection ~ 4150 4100
+Wire Wire Line
+	3600 3500 3600 3850
+Wire Wire Line
+	3600 3850 3600 4100
+Wire Wire Line
+	3400 3850 3600 3850
+Connection ~ 3600 3850
+Wire Wire Line
+	6000 4900 5900 4900
+Wire Wire Line
+	5600 5250 5600 5200
+Wire Wire Line
+	4250 4900 4500 4900
+Wire Wire Line
+	4500 4900 5000 4900
+Wire Wire Line
+	5000 4900 5300 4900
+Connection ~ 6200 3650
+Wire Wire Line
+	7650 4550 7100 4550
+Wire Wire Line
+	7100 4550 7100 4850
+Wire Wire Line
+	7650 5550 7100 5550
+Wire Wire Line
+	7100 5550 7100 5150
+Connection ~ 4150 2800
+Connection ~ 4700 2800
+Wire Wire Line
+	9650 2100 9650 2700
+Wire Wire Line
+	9650 2700 9650 3300
+Connection ~ 9650 2700
 Wire Wire Line
 	6900 1850 6900 2000
+Wire Wire Line
+	3550 4550 3550 4750
+Wire Wire Line
+	3550 4750 3550 4950
+Wire Wire Line
+	3550 4950 3550 5000
+Wire Wire Line
+	3550 4950 3500 4950
+Wire Wire Line
+	3550 4550 3500 4550
+Connection ~ 3550 4950
+Wire Wire Line
+	3500 4750 3550 4750
+Connection ~ 3550 4750
+Wire Wire Line
+	3500 4650 3750 4650
+Wire Wire Line
+	3750 4650 3750 4550
+Wire Wire Line
+	3500 4850 3750 4850
+Wire Wire Line
+	3750 4850 3750 4900
+Connection ~ 5000 4900
+Connection ~ 4500 4900
+Wire Wire Line
+	4250 4550 6800 4550
+Wire Wire Line
+	6800 4550 6800 5850
+Wire Wire Line
+	6800 5850 9250 5850
+Wire Wire Line
+	9250 5850 9250 2000
+$Comp
+L pspice:INDUCTOR L2
+U 1 1 5A17ACD2
+P 4000 4550
+F 0 "L2" V 3954 4628 50  0000 L CNN
+F 1 "ferrite bead" V 4045 4628 50  0000 L CNN
+F 2 "Inductors_SMD:L_0805_HandSoldering" H 4000 4550 50  0001 C CNN
+F 3 "" H 4000 4550 50  0001 C CNN
+	1    4000 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole_PAD MK1
+U 1 1 5A19DB8A
+P 2150 1650
+F 0 "MK1" H 2250 1701 50  0000 L CNN
+F 1 "Mounting_Hole_PAD" H 2250 1610 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 2150 1650 50  0001 C CNN
+F 3 "" H 2150 1650 50  0001 C CNN
+	1    2150 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 5A19E2AD
+P 2150 1750
+F 0 "#PWR027" H 2150 1500 50  0001 C CNN
+F 1 "GND" H 2155 1577 50  0000 C CNN
+F 2 "" H 2150 1750 50  0001 C CNN
+F 3 "" H 2150 1750 50  0001 C CNN
+	1    2150 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole_PAD MK2
+U 1 1 5A19E440
+P 2550 1650
+F 0 "MK2" H 2650 1701 50  0000 L CNN
+F 1 "Mounting_Hole_PAD" H 2650 1610 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 2550 1650 50  0001 C CNN
+F 3 "" H 2550 1650 50  0001 C CNN
+	1    2550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole_PAD MK3
+U 1 1 5A19E77E
+P 2950 1650
+F 0 "MK3" H 3050 1701 50  0000 L CNN
+F 1 "Mounting_Hole_PAD" H 3050 1610 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 2950 1650 50  0001 C CNN
+F 3 "" H 2950 1650 50  0001 C CNN
+	1    2950 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 5A19E78A
+P 2950 1750
+F 0 "#PWR029" H 2950 1500 50  0001 C CNN
+F 1 "GND" H 2955 1577 50  0000 C CNN
+F 2 "" H 2950 1750 50  0001 C CNN
+F 3 "" H 2950 1750 50  0001 C CNN
+	1    2950 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole_PAD MK4
+U 1 1 5A19E790
+P 3350 1650
+F 0 "MK4" H 3450 1701 50  0000 L CNN
+F 1 "Mounting_Hole_PAD" H 3450 1610 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 3350 1650 50  0001 C CNN
+F 3 "" H 3350 1650 50  0001 C CNN
+	1    3350 1650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
