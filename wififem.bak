@@ -206,7 +206,7 @@ U 1 1 5A15EA7A
 P 5800 1550
 F 0 "R8" H 5870 1596 50  0000 L CNN
 F 1 "100" H 5870 1505 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 5730 1550 50  0001 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5730 1550 50  0001 C CNN
 F 3 "" H 5800 1550 50  0001 C CNN
 	1    5800 1550
 	1    0    0    -1  
@@ -217,7 +217,7 @@ U 1 1 5A15EEDA
 P 6100 1550
 F 0 "R9" H 6170 1596 50  0000 L CNN
 F 1 "100" H 6170 1505 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6030 1550 50  0001 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6030 1550 50  0001 C CNN
 F 3 "" H 6100 1550 50  0001 C CNN
 	1    6100 1550
 	1    0    0    -1  
@@ -234,17 +234,11 @@ F 3 "" H 6400 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 3950 8450 3950
-Wire Wire Line
-	8450 3950 8500 3950
+	8400 3950 8500 3950
 Wire Wire Line
 	7800 3950 7700 3950
 Wire Wire Line
-	6600 3950 6650 3950
-Wire Wire Line
-	6650 3950 6950 3950
-Wire Wire Line
-	6950 3950 7100 3950
+	6600 3950 7100 3950
 Wire Wire Line
 	6950 3700 6950 3950
 Connection ~ 6950 3950
@@ -252,14 +246,10 @@ Wire Wire Line
 	6650 3700 6650 3950
 Connection ~ 6650 3950
 Wire Wire Line
-	6450 3400 6650 3400
-Wire Wire Line
-	6650 3400 6950 3400
+	6450 3400 6950 3400
 Connection ~ 6650 3400
 Wire Wire Line
-	5500 3650 6200 3650
-Wire Wire Line
-	6200 3650 6450 3650
+	5500 3650 6450 3650
 Wire Wire Line
 	6450 3400 6450 3650
 Wire Wire Line
@@ -301,23 +291,17 @@ Wire Wire Line
 Wire Wire Line
 	6100 1400 6100 1300
 Wire Wire Line
-	4900 1300 6100 1300
-Wire Wire Line
-	6100 1300 8450 1300
+	4900 1300 8450 1300
 Wire Wire Line
 	4900 1300 4900 1400
 Wire Wire Line
 	5200 1400 5200 1200
 Wire Wire Line
-	5200 1200 6400 1200
-Wire Wire Line
-	6400 1200 9100 1200
+	5200 1200 9100 1200
 Wire Wire Line
 	6400 1200 6400 1400
 Wire Wire Line
-	5500 1400 5700 1400
-Wire Wire Line
-	5700 1400 5800 1400
+	5500 1400 5800 1400
 $Comp
 L power:GND #PWR07
 U 1 1 5A162B2B
@@ -386,9 +370,7 @@ F 3 "" H 7900 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 2650 7600 2650
-Wire Wire Line
-	7600 2650 7750 2650
+	7550 2650 7750 2650
 Wire Wire Line
 	7250 2650 6300 2650
 $Comp
@@ -476,11 +458,7 @@ F 3 "" H 3950 2800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 2800 4150 2800
-Wire Wire Line
-	4150 2800 4700 2800
-Wire Wire Line
-	4700 2800 5000 2800
+	4100 2800 5000 2800
 Wire Wire Line
 	3800 2650 5000 2650
 $Comp
@@ -592,18 +570,16 @@ Connection ~ 6300 2000
 $Comp
 L power:+3V3 #PWR015
 U 1 1 5A17CF72
-P 6900 2000
-F 0 "#PWR015" H 6900 1850 50  0001 C CNN
-F 1 "+3V3" H 6915 2173 50  0000 C CNN
-F 2 "" H 6900 2000 50  0001 C CNN
-F 3 "" H 6900 2000 50  0001 C CNN
-	1    6900 2000
+P 6900 1550
+F 0 "#PWR015" H 6900 1400 50  0001 C CNN
+F 1 "+3V3" H 6915 1723 50  0000 C CNN
+F 2 "" H 6900 1550 50  0001 C CNN
+F 3 "" H 6900 1550 50  0001 C CNN
+	1    6900 1550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 2000 6300 2000
-Wire Wire Line
-	6300 2000 6400 2000
+	6100 2000 6400 2000
 $Comp
 L device:C C6
 U 1 1 5A184860
@@ -674,13 +650,9 @@ F 3 "" H 3950 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 3500 4150 3500
+	3900 3500 4350 3500
 Wire Wire Line
-	4150 3500 4350 3500
-Wire Wire Line
-	3900 4100 4150 4100
-Wire Wire Line
-	4150 4100 4350 4100
+	3900 4100 4350 4100
 Wire Wire Line
 	4650 3500 6000 3500
 Wire Wire Line
@@ -714,9 +686,7 @@ $EndComp
 Connection ~ 4150 3500
 Connection ~ 4150 4100
 Wire Wire Line
-	3600 3500 3600 3850
-Wire Wire Line
-	3600 3850 3600 4100
+	3600 3500 3600 4100
 $Comp
 L power:+3V3 #PWR019
 U 1 1 5A19E619
@@ -925,9 +895,7 @@ F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 9950 3300 50  000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9650 2100 9650 2700
-Wire Wire Line
-	9650 2700 9650 3300
+	9650 2100 9650 3300
 Connection ~ 9650 2700
 $Comp
 L power:GND #PWR025
@@ -941,14 +909,27 @@ F 3 "" H 9650 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R?
+L device:R R13
 U 1 1 5A1D64EB
 P 9650 3450
-F 0 "R?" H 9720 3496 50  0000 L CNN
+F 0 "R13" H 9720 3496 50  0000 L CNN
 F 1 "100k" H 9720 3405 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 9580 3450 50  0001 C CNN
 F 3 "" H 9650 3450 50  0001 C CNN
 	1    9650 3450
 	1    0    0    -1  
 $EndComp
+$Comp
+L device:R R14
+U 1 1 5A1DB8B4
+P 6900 1700
+F 0 "R14" H 6970 1746 50  0000 L CNN
+F 1 "0" H 6970 1655 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6830 1700 50  0001 C CNN
+F 3 "" H 6900 1700 50  0001 C CNN
+	1    6900 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1850 6900 2000
 $EndSCHEMATC
