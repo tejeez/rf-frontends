@@ -422,17 +422,6 @@ F 3 "" H 6300 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pspice:INDUCTOR L1
-U 1 1 5A17AD26
-P 6650 2000
-F 0 "L1" H 6650 1822 50  0000 C CNN
-F 1 "ferrite bead" H 6650 1913 50  0000 C CNN
-F 2 "Inductors_SMD:L_0805_HandSoldering" H 6650 2000 50  0001 C CNN
-F 3 "" H 6650 2000 50  0001 C CNN
-	1    6650 2000
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+3V3 #PWR015
 U 1 1 5A17CF72
 P 6900 1550
@@ -446,35 +435,35 @@ $EndComp
 $Comp
 L device:C C6
 U 1 1 5A184860
-P 6650 2350
-F 0 "C6" H 6535 2304 50  0000 R CNN
-F 1 "100n" H 6535 2395 50  0000 R CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6688 2200 50  0001 C CNN
-F 3 "" H 6650 2350 50  0001 C CNN
-	1    6650 2350
+P 6650 2900
+F 0 "C6" H 6535 2854 50  0000 R CNN
+F 1 "100n" H 6535 2945 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6688 2750 50  0001 C CNN
+F 3 "" H 6650 2900 50  0001 C CNN
+	1    6650 2900
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR016
 U 1 1 5A1848E9
-P 6650 2500
-F 0 "#PWR016" H 6650 2250 50  0001 C CNN
-F 1 "GND" H 6655 2327 50  0000 C CNN
-F 2 "" H 6650 2500 50  0001 C CNN
-F 3 "" H 6650 2500 50  0001 C CNN
-	1    6650 2500
+P 6650 3050
+F 0 "#PWR016" H 6650 2800 50  0001 C CNN
+F 1 "GND" H 6655 2877 50  0000 C CNN
+F 2 "" H 6650 3050 50  0001 C CNN
+F 3 "" H 6650 3050 50  0001 C CNN
+	1    6650 3050
 	1    0    0    -1  
 $EndComp
 $Comp
 L pspice:INDUCTOR L4
 U 1 1 5A18492E
-P 6900 2200
-F 0 "L4" H 6900 2022 50  0000 C CNN
-F 1 "ferrite bead" H 6900 2113 50  0000 C CNN
-F 2 "Inductors_SMD:L_0805_HandSoldering" H 6900 2200 50  0001 C CNN
-F 3 "" H 6900 2200 50  0001 C CNN
-	1    6900 2200
-	-1   0    0    1   
+P 6900 2300
+F 0 "L4" H 6900 2122 50  0000 C CNN
+F 1 "ferrite bead" H 6900 2213 50  0000 C CNN
+F 2 "Inductors_SMD:L_0805_HandSoldering" H 6900 2300 50  0001 C CNN
+F 3 "" H 6900 2300 50  0001 C CNN
+	1    6900 2300
+	0    1    1    0   
 $EndComp
 $Comp
 L device:D_Schottky_x2_KCom_AAK D1
@@ -795,6 +784,127 @@ F 3 "" H 4000 4900 50  0001 C CNN
 	1    4000 4900
 	-1   0    0    1   
 $EndComp
+$Comp
+L pspice:INDUCTOR L2
+U 1 1 5A17ACD2
+P 4000 4550
+F 0 "L2" V 3954 4628 50  0000 L CNN
+F 1 "ferrite bead" V 4045 4628 50  0000 L CNN
+F 2 "Inductors_SMD:L_0805_HandSoldering" H 4000 4550 50  0001 C CNN
+F 3 "" H 4000 4550 50  0001 C CNN
+	1    4000 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole_PAD MK1
+U 1 1 5A19DB8A
+P 2150 1650
+F 0 "MK1" H 2250 1701 50  0000 L CNN
+F 1 "Mounting_Hole_PAD" H 2250 1610 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 2150 1650 50  0001 C CNN
+F 3 "" H 2150 1650 50  0001 C CNN
+	1    2150 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 5A19E2AD
+P 2150 1750
+F 0 "#PWR027" H 2150 1500 50  0001 C CNN
+F 1 "GND" H 2155 1577 50  0000 C CNN
+F 2 "" H 2150 1750 50  0001 C CNN
+F 3 "" H 2150 1750 50  0001 C CNN
+	1    2150 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole_PAD MK2
+U 1 1 5A19E440
+P 2550 1650
+F 0 "MK2" H 2650 1701 50  0000 L CNN
+F 1 "Mounting_Hole_PAD" H 2650 1610 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 2550 1650 50  0001 C CNN
+F 3 "" H 2550 1650 50  0001 C CNN
+	1    2550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole_PAD MK3
+U 1 1 5A19E77E
+P 2950 1650
+F 0 "MK3" H 3050 1701 50  0000 L CNN
+F 1 "Mounting_Hole_PAD" H 3050 1610 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 2950 1650 50  0001 C CNN
+F 3 "" H 2950 1650 50  0001 C CNN
+	1    2950 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 5A19E78A
+P 2950 1750
+F 0 "#PWR029" H 2950 1500 50  0001 C CNN
+F 1 "GND" H 2955 1577 50  0000 C CNN
+F 2 "" H 2950 1750 50  0001 C CNN
+F 3 "" H 2950 1750 50  0001 C CNN
+	1    2950 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole_PAD MK4
+U 1 1 5A19E790
+P 3350 1650
+F 0 "MK4" H 3450 1701 50  0000 L CNN
+F 1 "Mounting_Hole_PAD" H 3450 1610 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 3350 1650 50  0001 C CNN
+F 3 "" H 3350 1650 50  0001 C CNN
+	1    3350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 5A15FD74
+P 5300 3200
+F 0 "#PWR028" H 5300 2950 50  0001 C CNN
+F 1 "GND" H 5305 3027 50  0000 C CNN
+F 2 "" H 5300 3200 50  0001 C CNN
+F 3 "" H 5300 3200 50  0001 C CNN
+	1    5300 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R15
+U 1 1 5A16EBBC
+P 6200 650
+F 0 "R15" H 6270 696 50  0000 L CNN
+F 1 "0 (lna off)" H 6270 605 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 6130 650 50  0001 C CNN
+F 3 "" H 6200 650 50  0001 C CNN
+	1    6200 650 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5A172D6A
+P 5850 650
+F 0 "#PWR030" H 5850 400 50  0001 C CNN
+F 1 "GND" H 5855 477 50  0000 C CNN
+F 2 "" H 5850 650 50  0001 C CNN
+F 3 "" H 5850 650 50  0001 C CNN
+	1    5850 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R16
+U 1 1 5A17F845
+P 6650 650
+F 0 "R16" H 6720 696 50  0000 L CNN
+F 1 "0 (lna on)" H 6720 605 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 6580 650 50  0001 C CNN
+F 3 "" H 6650 650 50  0001 C CNN
+	1    6650 650 
+	0    1    1    0   
+$EndComp
 Wire Wire Line
 	8400 3950 8500 3950
 Wire Wire Line
@@ -883,8 +993,6 @@ Wire Wire Line
 Wire Wire Line
 	4100 2800 5000 2800
 Wire Wire Line
-	3800 2650 5000 2650
-Wire Wire Line
 	4550 2350 4600 2350
 Wire Wire Line
 	5000 2500 5000 2350
@@ -892,13 +1000,9 @@ Wire Wire Line
 	5000 2350 4900 2350
 Connection ~ 6300 2000
 Wire Wire Line
-	6100 2000 6400 2000
+	6100 2000 6550 2000
 Wire Wire Line
-	6900 2000 7150 2000
-Wire Wire Line
-	7150 2000 7150 2200
-Wire Wire Line
-	6650 2200 6650 1950
+	6650 1950 6650 2750
 Wire Wire Line
 	6650 1950 6000 1950
 Wire Wire Line
@@ -947,7 +1051,7 @@ Wire Wire Line
 	9650 2100 9650 3300
 Connection ~ 9650 2700
 Wire Wire Line
-	6900 1850 6900 2000
+	6900 1850 6900 2050
 Wire Wire Line
 	3550 4550 3550 5000
 Wire Wire Line
@@ -976,136 +1080,15 @@ Wire Wire Line
 	6800 5850 9250 5850
 Wire Wire Line
 	9250 5850 9250 1950
-$Comp
-L pspice:INDUCTOR L2
-U 1 1 5A17ACD2
-P 4000 4550
-F 0 "L2" V 3954 4628 50  0000 L CNN
-F 1 "ferrite bead" V 4045 4628 50  0000 L CNN
-F 2 "Inductors_SMD:L_0805_HandSoldering" H 4000 4550 50  0001 C CNN
-F 3 "" H 4000 4550 50  0001 C CNN
-	1    4000 4550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Mechanical:Mounting_Hole_PAD MK1
-U 1 1 5A19DB8A
-P 2150 1650
-F 0 "MK1" H 2250 1701 50  0000 L CNN
-F 1 "Mounting_Hole_PAD" H 2250 1610 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 2150 1650 50  0001 C CNN
-F 3 "" H 2150 1650 50  0001 C CNN
-	1    2150 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR027
-U 1 1 5A19E2AD
-P 2150 1750
-F 0 "#PWR027" H 2150 1500 50  0001 C CNN
-F 1 "GND" H 2155 1577 50  0000 C CNN
-F 2 "" H 2150 1750 50  0001 C CNN
-F 3 "" H 2150 1750 50  0001 C CNN
-	1    2150 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:Mounting_Hole_PAD MK2
-U 1 1 5A19E440
-P 2550 1650
-F 0 "MK2" H 2650 1701 50  0000 L CNN
-F 1 "Mounting_Hole_PAD" H 2650 1610 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 2550 1650 50  0001 C CNN
-F 3 "" H 2550 1650 50  0001 C CNN
-	1    2550 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:Mounting_Hole_PAD MK3
-U 1 1 5A19E77E
-P 2950 1650
-F 0 "MK3" H 3050 1701 50  0000 L CNN
-F 1 "Mounting_Hole_PAD" H 3050 1610 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 2950 1650 50  0001 C CNN
-F 3 "" H 2950 1650 50  0001 C CNN
-	1    2950 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR029
-U 1 1 5A19E78A
-P 2950 1750
-F 0 "#PWR029" H 2950 1500 50  0001 C CNN
-F 1 "GND" H 2955 1577 50  0000 C CNN
-F 2 "" H 2950 1750 50  0001 C CNN
-F 3 "" H 2950 1750 50  0001 C CNN
-	1    2950 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:Mounting_Hole_PAD MK4
-U 1 1 5A19E790
-P 3350 1650
-F 0 "MK4" H 3450 1701 50  0000 L CNN
-F 1 "Mounting_Hole_PAD" H 3450 1610 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 3350 1650 50  0001 C CNN
-F 3 "" H 3350 1650 50  0001 C CNN
-	1    3350 1650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7600 2000 7600 1950
 Connection ~ 7600 1950
-$Comp
-L power:GND #PWR028
-U 1 1 5A15FD74
-P 5300 3200
-F 0 "#PWR028" H 5300 2950 50  0001 C CNN
-F 1 "GND" H 5305 3027 50  0000 C CNN
-F 2 "" H 5300 3200 50  0001 C CNN
-F 3 "" H 5300 3200 50  0001 C CNN
-	1    5300 3200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5300 3200 5300 3150
-$Comp
-L device:R R15
-U 1 1 5A16EBBC
-P 6200 650
-F 0 "R15" H 6270 696 50  0000 L CNN
-F 1 "0 (lna off)" H 6270 605 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" V 6130 650 50  0001 C CNN
-F 3 "" H 6200 650 50  0001 C CNN
-	1    6200 650 
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR030
-U 1 1 5A172D6A
-P 5850 650
-F 0 "#PWR030" H 5850 400 50  0001 C CNN
-F 1 "GND" H 5855 477 50  0000 C CNN
-F 2 "" H 5850 650 50  0001 C CNN
-F 3 "" H 5850 650 50  0001 C CNN
-	1    5850 650 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5850 650  6050 650 
 Wire Wire Line
 	5700 1800 6100 1800
-$Comp
-L device:R R16
-U 1 1 5A17F845
-P 6650 650
-F 0 "R16" H 6720 696 50  0000 L CNN
-F 1 "0 (lna on)" H 6720 605 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" V 6580 650 50  0001 C CNN
-F 3 "" H 6650 650 50  0001 C CNN
-	1    6650 650 
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7000 1300 7000 650 
 Wire Wire Line
@@ -1120,4 +1103,13 @@ Wire Wire Line
 Wire Wire Line
 	6350 650  6500 650 
 Connection ~ 6400 650 
+Wire Wire Line
+	6550 2000 6550 1850
+Wire Wire Line
+	6550 1850 6900 1850
+Wire Wire Line
+	6900 2550 6650 2550
+Connection ~ 6650 2550
+Wire Wire Line
+	3800 2650 5000 2650
 $EndSCHEMATC
