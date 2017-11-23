@@ -841,8 +841,6 @@ Wire Wire Line
 Wire Wire Line
 	5700 2000 5700 1800
 Wire Wire Line
-	5700 1800 6100 1800
-Wire Wire Line
 	6100 1800 6100 1700
 Wire Wire Line
 	6400 1700 6400 1850
@@ -850,8 +848,6 @@ Wire Wire Line
 	6400 1850 5800 1850
 Wire Wire Line
 	5800 1850 5800 2000
-Wire Wire Line
-	6100 1400 6100 1300
 Wire Wire Line
 	4900 1300 8450 1300
 Wire Wire Line
@@ -872,7 +868,6 @@ Connection ~ 5700 1400
 Wire Wire Line
 	8450 1300 8450 3950
 Connection ~ 8450 3950
-Connection ~ 6100 1300
 Wire Wire Line
 	9100 3950 9100 1200
 Connection ~ 6400 1200
@@ -1062,10 +1057,10 @@ Wire Wire Line
 	7600 2000 7600 1950
 Connection ~ 7600 1950
 $Comp
-L power:GND #PWR?
+L power:GND #PWR028
 U 1 1 5A15FD74
 P 5300 3200
-F 0 "#PWR?" H 5300 2950 50  0001 C CNN
+F 0 "#PWR028" H 5300 2950 50  0001 C CNN
 F 1 "GND" H 5305 3027 50  0000 C CNN
 F 2 "" H 5300 3200 50  0001 C CNN
 F 3 "" H 5300 3200 50  0001 C CNN
@@ -1074,4 +1069,55 @@ F 3 "" H 5300 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5300 3200 5300 3150
+$Comp
+L device:R R15
+U 1 1 5A16EBBC
+P 6200 650
+F 0 "R15" H 6270 696 50  0000 L CNN
+F 1 "0 (lna off)" H 6270 605 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 6130 650 50  0001 C CNN
+F 3 "" H 6200 650 50  0001 C CNN
+	1    6200 650 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5A172D6A
+P 5850 650
+F 0 "#PWR030" H 5850 400 50  0001 C CNN
+F 1 "GND" H 5855 477 50  0000 C CNN
+F 2 "" H 5850 650 50  0001 C CNN
+F 3 "" H 5850 650 50  0001 C CNN
+	1    5850 650 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 650  6050 650 
+Wire Wire Line
+	5700 1800 6100 1800
+$Comp
+L device:R R16
+U 1 1 5A17F845
+P 6650 650
+F 0 "R16" H 6720 696 50  0000 L CNN
+F 1 "0 (lna on)" H 6720 605 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 6580 650 50  0001 C CNN
+F 3 "" H 6650 650 50  0001 C CNN
+	1    6650 650 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 1300 7000 650 
+Wire Wire Line
+	7000 650  6800 650 
+Connection ~ 7000 1300
+Wire Wire Line
+	6100 1400 6100 1050
+Wire Wire Line
+	6100 1050 6400 1050
+Wire Wire Line
+	6400 1050 6400 650 
+Wire Wire Line
+	6350 650  6500 650 
+Connection ~ 6400 650 
 $EndSCHEMATC
