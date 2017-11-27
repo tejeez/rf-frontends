@@ -369,12 +369,12 @@ $EndComp
 $Comp
 L device:C C2
 U 1 1 5A16FCB3
-P 4150 3100
-F 0 "C2" H 4035 3054 50  0000 R CNN
-F 1 "1p" H 4035 3145 50  0000 R CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4188 2950 50  0001 C CNN
-F 3 "" H 4150 3100 50  0001 C CNN
-	1    4150 3100
+P 4750 3100
+F 0 "C2" H 4635 3054 50  0000 R CNN
+F 1 "1p" H 4635 3145 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4788 2950 50  0001 C CNN
+F 3 "" H 4750 3100 50  0001 C CNN
+	1    4750 3100
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -629,28 +629,6 @@ F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7138 4850 50  0001 C CNN
 F 3 "" H 7100 5000 50  0001 C CNN
 	1    7100 5000
 	-1   0    0    1   
-$EndComp
-$Comp
-L pspice:INDUCTOR L5
-U 1 1 5A1BC783
-P 4700 3050
-F 0 "L5" V 4746 3010 50  0000 R CNN
-F 1 "10n" V 4655 3010 50  0000 R CNN
-F 2 "Inductors_SMD:L_0805_HandSoldering" H 4700 3050 50  0001 C CNN
-F 3 "" H 4700 3050 50  0001 C CNN
-	1    4700 3050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR017
-U 1 1 5A1C03BF
-P 4700 3300
-F 0 "#PWR017" H 4700 3050 50  0001 C CNN
-F 1 "GND" H 4705 3127 50  0000 C CNN
-F 2 "" H 4700 3300 50  0001 C CNN
-F 3 "" H 4700 3300 50  0001 C CNN
-	1    4700 3300
-	1    0    0    -1  
 $EndComp
 $Comp
 L Logic_74xx:74HCT04 U2
@@ -991,8 +969,6 @@ Wire Wire Line
 Wire Wire Line
 	7600 2500 7600 2650
 Wire Wire Line
-	4100 2800 5000 2800
-Wire Wire Line
 	4550 2350 4600 2350
 Wire Wire Line
 	5000 2500 5000 2350
@@ -1007,10 +983,6 @@ Wire Wire Line
 	6650 1950 6000 1950
 Wire Wire Line
 	6000 1950 6000 2000
-Wire Wire Line
-	4150 2800 4150 2950
-Wire Wire Line
-	4150 3250 4150 3500
 Wire Wire Line
 	3900 3500 4350 3500
 Wire Wire Line
@@ -1045,8 +1017,6 @@ Wire Wire Line
 	7650 5550 7100 5550
 Wire Wire Line
 	7100 5550 7100 5150
-Connection ~ 4150 2800
-Connection ~ 4700 2800
 Wire Wire Line
 	9650 2100 9650 3300
 Connection ~ 9650 2700
@@ -1110,6 +1080,41 @@ Wire Wire Line
 Wire Wire Line
 	6900 2550 6650 2550
 Connection ~ 6650 2550
+$Comp
+L device:C C?
+U 1 1 5A1C7E8A
+P 4150 2650
+F 0 "C?" V 3898 2650 50  0000 C CNN
+F 1 "10p" V 3989 2650 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4188 2500 50  0001 C CNN
+F 3 "" H 4150 2650 50  0001 C CNN
+	1    4150 2650
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	3800 2650 5000 2650
+	4750 2800 4750 2950
+Connection ~ 4750 2800
+Wire Wire Line
+	4750 3250 4150 3250
+Wire Wire Line
+	4150 3250 4150 3500
+$Comp
+L device:C C?
+U 1 1 5A1D3989
+P 4400 2800
+F 0 "C?" V 4148 2800 50  0000 C CNN
+F 1 "10p" V 4239 2800 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4438 2650 50  0001 C CNN
+F 3 "" H 4400 2800 50  0001 C CNN
+	1    4400 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 2800 4100 2800
+Wire Wire Line
+	4550 2800 5000 2800
+Wire Wire Line
+	4000 2650 3800 2650
+Wire Wire Line
+	4300 2650 5000 2650
 $EndSCHEMATC
