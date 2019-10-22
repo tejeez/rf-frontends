@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:wififem-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L device:R R1
+L Device:R R1
 U 1 1 5A159832
 P 4500 3500
 F 0 "R1" V 4707 3500 50  0000 C CNN
@@ -26,7 +26,7 @@ F 3 "" H 4500 3500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L linear:MCP6566 U1
+L Comparator:MCP6566 U1
 U 1 1 5A159B89
 P 6300 3950
 F 0 "U1" H 6400 3850 50  0000 L CNN
@@ -37,7 +37,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/DS20002143E.pdf" H 6300 395
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R2
+L Device:R R2
 U 1 1 5A159C19
 P 4500 4100
 F 0 "R2" V 4707 4100 50  0000 C CNN
@@ -70,7 +70,7 @@ F 3 "" H 6200 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Logic_74xx:74HCT04 U2
+L 74xx:74HCT04 U2
 U 1 1 5A159D7B
 P 9950 2100
 F 0 "U2" H 9950 2417 50  0000 C CNN
@@ -81,7 +81,7 @@ F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 9950 2100 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Logic_74xx:74HCT04 U2
+L 74xx:74HCT04 U2
 U 2 1 5A159F5E
 P 9950 2700
 F 0 "U2" H 9950 3017 50  0000 C CNN
@@ -92,7 +92,7 @@ F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 9950 2700 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R3
+L Device:R R3
 U 1 1 5A15A2B0
 P 6650 3550
 F 0 "R3" H 6720 3596 50  0000 L CNN
@@ -103,7 +103,7 @@ F 3 "" H 6650 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C1
+L Device:C C1
 U 1 1 5A15A34E
 P 6950 3550
 F 0 "C1" H 7065 3596 50  0000 L CNN
@@ -169,7 +169,7 @@ F 3 "" H 5500 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R5
+L Device:R R5
 U 1 1 5A15E6DC
 P 4900 1550
 F 0 "R5" H 4970 1596 50  0000 L CNN
@@ -180,7 +180,7 @@ F 3 "" H 4900 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R6
+L Device:R R6
 U 1 1 5A15E972
 P 5200 1550
 F 0 "R6" H 5270 1596 50  0000 L CNN
@@ -191,7 +191,7 @@ F 3 "" H 5200 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R7
+L Device:R R7
 U 1 1 5A15EA42
 P 5500 1550
 F 0 "R7" H 5570 1596 50  0000 L CNN
@@ -202,7 +202,7 @@ F 3 "" H 5500 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R8
+L Device:R R8
 U 1 1 5A15EA7A
 P 5800 1550
 F 0 "R8" H 5870 1596 50  0000 L CNN
@@ -213,7 +213,7 @@ F 3 "" H 5800 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R9
+L Device:R R9
 U 1 1 5A15EEDA
 P 6100 1550
 F 0 "R9" H 6170 1596 50  0000 L CNN
@@ -224,7 +224,7 @@ F 3 "" H 6100 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R10
+L Device:R R10
 U 1 1 5A15EF0E
 P 6400 1550
 F 0 "R10" H 6470 1596 50  0000 L CNN
@@ -246,7 +246,7 @@ F 3 "" H 5500 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Logic_74xx:74HCT04 U2
+L 74xx:74HCT04 U2
 U 7 1 5A165E06
 P 7650 5050
 F 0 "U2" H 7880 5096 50  0000 L CNN
@@ -257,7 +257,7 @@ F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 7650 5050 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C5
+L Device:C C5
 U 1 1 5A166740
 P 7400 2650
 F 0 "C5" V 7148 2650 50  0000 C CNN
@@ -301,7 +301,7 @@ F 3 "" H 7600 2250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:C C4
+L Device:C C4
 U 1 1 5A169C8A
 P 7350 1950
 F 0 "C4" V 7098 1950 50  0000 C CNN
@@ -367,7 +367,7 @@ F 3 "" H 3650 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C2
+L Device:C C2
 U 1 1 5A16FCB3
 P 4750 3100
 F 0 "C2" H 4635 3054 50  0000 R CNN
@@ -378,7 +378,7 @@ F 3 "" H 4750 3100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R4
+L Device:R R4
 U 1 1 5A17126E
 P 4750 2350
 F 0 "R4" V 4543 2350 50  0000 C CNN
@@ -400,7 +400,7 @@ F 3 "" H 4550 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C3
+L Device:C C3
 U 1 1 5A1790C5
 P 6300 2150
 F 0 "C3" H 6185 2104 50  0000 R CNN
@@ -433,7 +433,7 @@ F 3 "" H 6900 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C6
+L Device:C C6
 U 1 1 5A184860
 P 6650 2900
 F 0 "C6" H 6535 2854 50  0000 R CNN
@@ -466,7 +466,7 @@ F 3 "" H 6900 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:D_Schottky_x2_KCom_AAK D1
+L Device:D_Schottky_x2_KCom_AAK D1
 U 1 1 5A18CEB6
 P 4150 3800
 F 0 "D1" V 4104 3879 50  0000 L CNN
@@ -488,7 +488,7 @@ F 3 "" H 3950 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R11
+L Device:R R11
 U 1 1 5A1979CF
 P 3750 3500
 F 0 "R11" V 3957 3500 50  0000 C CNN
@@ -499,7 +499,7 @@ F 3 "" H 3750 3500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R12
+L Device:R R12
 U 1 1 5A197A35
 P 3750 4100
 F 0 "R12" V 3957 4100 50  0000 C CNN
@@ -521,7 +521,7 @@ F 3 "" H 3400 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L regul:AP1117-15 U4
+L Regulator_Linear:AP1117-15 U4
 U 1 1 5A1A47EC
 P 5600 4900
 F 0 "U4" H 5600 5142 50  0000 C CNN
@@ -554,7 +554,7 @@ F 3 "" H 5600 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C9
+L Device:C C9
 U 1 1 5A1AA377
 P 6000 5050
 F 0 "C9" H 5885 5004 50  0000 R CNN
@@ -576,7 +576,7 @@ F 3 "" H 6000 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C7
+L Device:C C7
 U 1 1 5A1AA680
 P 5000 5050
 F 0 "C7" H 4885 5004 50  0000 R CNN
@@ -598,7 +598,7 @@ F 3 "" H 5000 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C8
+L Device:C C8
 U 1 1 5A1ACD39
 P 5500 3800
 F 0 "C8" H 5385 3754 50  0000 R CNN
@@ -620,7 +620,7 @@ F 3 "" H 5500 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C10
+L Device:C C10
 U 1 1 5A1B1111
 P 7100 5000
 F 0 "C10" H 6985 4954 50  0000 R CNN
@@ -631,7 +631,7 @@ F 3 "" H 7100 5000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Logic_74xx:74HCT04 U2
+L 74xx:74HCT04 U2
 U 4 1 5A1C573B
 P 8800 3950
 F 0 "U2" H 8800 4267 50  0000 C CNN
@@ -642,7 +642,7 @@ F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 8800 3950 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Logic_74xx:74HCT04 U2
+L 74xx:74HCT04 U2
 U 5 1 5A1C586C
 P 8100 3950
 F 0 "U2" H 8100 4267 50  0000 C CNN
@@ -653,7 +653,7 @@ F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 8100 3950 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Logic_74xx:74HCT04 U2
+L 74xx:74HCT04 U2
 U 6 1 5A1C59B9
 P 7400 3950
 F 0 "U2" H 7400 4267 50  0000 C CNN
@@ -664,7 +664,7 @@ F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 7400 3950 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Logic_74xx:74HCT04 U2
+L 74xx:74HCT04 U2
 U 3 1 5A15A004
 P 9950 3300
 F 0 "U2" H 9950 3617 50  0000 C CNN
@@ -686,7 +686,7 @@ F 3 "" H 9650 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R13
+L Device:R R13
 U 1 1 5A1D64EB
 P 9650 3450
 F 0 "R13" H 9720 3496 50  0000 L CNN
@@ -697,7 +697,7 @@ F 3 "" H 9650 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R14
+L Device:R R14
 U 1 1 5A1DB8B4
 P 6900 1700
 F 0 "R14" H 6970 1746 50  0000 L CNN
@@ -708,7 +708,7 @@ F 3 "" H 6900 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x05 J4
+L Connector_Generic:Conn_01x05 J4
 U 1 1 5A160C10
 P 3300 4750
 F 0 "J4" H 3380 4792 50  0000 L CNN
@@ -774,7 +774,7 @@ F 3 "" H 4000 4550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole_PAD MK1
+L Mechanical:MountingHole_Pad MK1
 U 1 1 5A19DB8A
 P 2150 1650
 F 0 "MK1" H 2250 1701 50  0000 L CNN
@@ -796,7 +796,7 @@ F 3 "" H 2150 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole_PAD MK2
+L Mechanical:MountingHole_Pad MK2
 U 1 1 5A19E440
 P 2550 1650
 F 0 "MK2" H 2650 1701 50  0000 L CNN
@@ -807,7 +807,7 @@ F 3 "" H 2550 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole_PAD MK3
+L Mechanical:MountingHole_Pad MK3
 U 1 1 5A19E77E
 P 2950 1650
 F 0 "MK3" H 3050 1701 50  0000 L CNN
@@ -829,7 +829,7 @@ F 3 "" H 2950 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole_PAD MK4
+L Mechanical:MountingHole_Pad MK4
 U 1 1 5A19E790
 P 3350 1650
 F 0 "MK4" H 3450 1701 50  0000 L CNN
@@ -851,7 +851,7 @@ F 3 "" H 5300 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R15
+L Device:R R15
 U 1 1 5A16EBBC
 P 6200 650
 F 0 "R15" H 6270 696 50  0000 L CNN
@@ -873,7 +873,7 @@ F 3 "" H 5850 650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R16
+L Device:R R16
 U 1 1 5A17F845
 P 6650 650
 F 0 "R16" H 6720 696 50  0000 L CNN
@@ -884,11 +884,11 @@ F 3 "" H 6650 650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8400 3950 8500 3950
+	8400 3950 8450 3950
 Wire Wire Line
 	7800 3950 7700 3950
 Wire Wire Line
-	6600 3950 7100 3950
+	6600 3950 6650 3950
 Wire Wire Line
 	6950 3700 6950 3950
 Connection ~ 6950 3950
@@ -896,10 +896,10 @@ Wire Wire Line
 	6650 3700 6650 3950
 Connection ~ 6650 3950
 Wire Wire Line
-	6450 3400 6950 3400
+	6450 3400 6650 3400
 Connection ~ 6650 3400
 Wire Wire Line
-	5500 3650 6450 3650
+	5500 3650 6200 3650
 Wire Wire Line
 	6450 3400 6450 3650
 Wire Wire Line
@@ -937,17 +937,17 @@ Wire Wire Line
 Wire Wire Line
 	5800 1850 5800 2000
 Wire Wire Line
-	4900 1300 8450 1300
+	4900 1300 7000 1300
 Wire Wire Line
 	4900 1300 4900 1400
 Wire Wire Line
 	5200 1400 5200 1200
 Wire Wire Line
-	5200 1200 9100 1200
+	5200 1200 6400 1200
 Wire Wire Line
 	6400 1200 6400 1400
 Wire Wire Line
-	5500 1400 5800 1400
+	5500 1400 5700 1400
 Wire Wire Line
 	5700 1400 5700 950 
 Wire Wire Line
@@ -960,12 +960,12 @@ Wire Wire Line
 	9100 3950 9100 1200
 Connection ~ 6400 1200
 Wire Wire Line
-	7550 2650 7750 2650
+	7550 2650 7600 2650
 Wire Wire Line
 	7250 2650 6300 2650
 Connection ~ 7600 2650
 Wire Wire Line
-	7500 1950 9250 1950
+	7500 1950 7600 1950
 Wire Wire Line
 	7600 2500 7600 2650
 Wire Wire Line
@@ -976,17 +976,17 @@ Wire Wire Line
 	5000 2350 4900 2350
 Connection ~ 6300 2000
 Wire Wire Line
-	6100 2000 6550 2000
+	6100 2000 6300 2000
 Wire Wire Line
-	6650 1950 6650 2750
+	6650 1950 6650 2550
 Wire Wire Line
 	6650 1950 6000 1950
 Wire Wire Line
 	6000 1950 6000 2000
 Wire Wire Line
-	3900 3500 4350 3500
+	3900 3500 4150 3500
 Wire Wire Line
-	3900 4100 4350 4100
+	3900 4100 4150 4100
 Wire Wire Line
 	4650 3500 6000 3500
 Wire Wire Line
@@ -998,16 +998,16 @@ Wire Wire Line
 Connection ~ 4150 3500
 Connection ~ 4150 4100
 Wire Wire Line
-	3600 3500 3600 4100
+	3600 3500 3600 3850
 Wire Wire Line
 	3400 3850 3600 3850
 Connection ~ 3600 3850
 Wire Wire Line
-	5900 4900 6450 4900
+	5900 4900 6000 4900
 Wire Wire Line
 	5600 5250 5600 5200
 Wire Wire Line
-	4250 4900 5300 4900
+	4250 4900 4500 4900
 Connection ~ 6200 3650
 Wire Wire Line
 	7650 4550 7100 4550
@@ -1018,12 +1018,9 @@ Wire Wire Line
 Wire Wire Line
 	7100 5550 7100 5150
 Wire Wire Line
-	9650 2100 9650 3300
-Connection ~ 9650 2700
-Wire Wire Line
 	6900 1850 6900 2050
 Wire Wire Line
-	3550 4550 3550 5000
+	3550 4550 3550 4750
 Wire Wire Line
 	3550 4950 3500 4950
 Wire Wire Line
@@ -1071,7 +1068,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 1050 6400 650 
 Wire Wire Line
-	6350 650  6500 650 
+	6350 650  6400 650 
 Connection ~ 6400 650 
 Wire Wire Line
 	6550 2000 6550 1850
@@ -1081,7 +1078,7 @@ Wire Wire Line
 	6900 2550 6650 2550
 Connection ~ 6650 2550
 $Comp
-L device:C C11
+L Device:C C11
 U 1 1 5A1C7E8A
 P 4150 2650
 F 0 "C11" V 3898 2650 50  0000 C CNN
@@ -1099,7 +1096,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 3250 4150 3500
 $Comp
-L device:C C12
+L Device:C C12
 U 1 1 5A1D3989
 P 4400 2800
 F 0 "C12" V 4148 2800 50  0000 C CNN
@@ -1112,13 +1109,13 @@ $EndComp
 Wire Wire Line
 	4250 2800 4100 2800
 Wire Wire Line
-	4550 2800 5000 2800
+	4550 2800 4750 2800
 Wire Wire Line
 	4000 2650 3800 2650
 Wire Wire Line
 	4300 2650 5000 2650
 $Comp
-L device:C C13
+L Device:C C13
 U 1 1 5A1F21AD
 P 4750 5750
 F 0 "C13" H 4635 5704 50  0000 R CNN
@@ -1143,7 +1140,7 @@ F 3 "" H 4750 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C14
+L Device:C C14
 U 1 1 5A1F733E
 P 6450 5050
 F 0 "C14" H 6335 5004 50  0000 R CNN
@@ -1165,4 +1162,52 @@ F 3 "" H 6450 5200 50  0001 C CNN
 	1    6450 5200
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6950 3950 7100 3950
+Wire Wire Line
+	6650 3950 6950 3950
+Wire Wire Line
+	6650 3400 6950 3400
+Wire Wire Line
+	5700 1400 5800 1400
+Wire Wire Line
+	8450 3950 8500 3950
+Wire Wire Line
+	6400 1200 9100 1200
+Wire Wire Line
+	7600 2650 7750 2650
+Wire Wire Line
+	6300 2000 6550 2000
+Wire Wire Line
+	4150 3500 4350 3500
+Wire Wire Line
+	4150 4100 4350 4100
+Wire Wire Line
+	3600 3850 3600 4100
+Wire Wire Line
+	6200 3650 6450 3650
+Wire Wire Line
+	3550 4950 3550 5000
+Wire Wire Line
+	3550 4750 3550 4950
+Wire Wire Line
+	5000 4900 5300 4900
+Wire Wire Line
+	4500 4900 4750 4900
+Wire Wire Line
+	7600 1950 9250 1950
+Wire Wire Line
+	7000 1300 8450 1300
+Wire Wire Line
+	6400 650  6500 650 
+Wire Wire Line
+	6650 2550 6650 2750
+Wire Wire Line
+	4750 2800 5000 2800
+Wire Wire Line
+	4750 4900 5000 4900
+Wire Wire Line
+	6000 4900 6450 4900
+Wire Wire Line
+	9650 2100 9650 3300
 $EndSCHEMATC
