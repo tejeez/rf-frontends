@@ -483,16 +483,6 @@ Text Label 3400 950  0    50   ~ 0
 PA_VGG
 Text Label 4100 950  2    50   ~ 0
 PA_VDD
-Wire Wire Line
-	5550 6050 5550 6150
-Wire Wire Line
-	5550 6650 5150 6650
-Connection ~ 5550 6150
-Wire Wire Line
-	5550 6150 5550 6250
-Connection ~ 5550 6250
-Wire Wire Line
-	5550 6250 5550 6650
 Connection ~ 5150 6650
 Text Label 4750 6050 2    50   ~ 0
 SDA
@@ -586,7 +576,7 @@ L Device:R R8
 U 1 1 5DB1F44C
 P 4300 3750
 F 0 "R8" V 4093 3750 50  0000 C CNN
-F 1 "0" V 4184 3750 50  0000 C CNN
+F 1 "1" V 4184 3750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4230 3750 50  0001 C CNN
 F 3 "~" H 4300 3750 50  0001 C CNN
 	1    4300 3750
@@ -1179,4 +1169,33 @@ Wire Wire Line
 	6800 1700 7450 1700
 Text Label 5750 4300 0    50   ~ 0
 REG_ADJ
+$Comp
+L Device:Net-Tie_2 NT1
+U 1 1 5DB79A0B
+P 5650 6450
+F 0 "NT1" V 5650 6494 50  0000 L CNN
+F 1 "~" V 5695 6494 50  0000 L CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 5650 6450 50  0001 C CNN
+F 3 "~" H 5650 6450 50  0001 C CNN
+	1    5650 6450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 6350 5650 6250
+Wire Wire Line
+	5650 6050 5550 6050
+Wire Wire Line
+	5550 6150 5650 6150
+Connection ~ 5650 6150
+Wire Wire Line
+	5650 6150 5650 6050
+Wire Wire Line
+	5550 6250 5650 6250
+Connection ~ 5650 6250
+Wire Wire Line
+	5650 6250 5650 6150
+Wire Wire Line
+	5650 6550 5650 6650
+Wire Wire Line
+	5150 6650 5650 6650
 $EndSCHEMATC
