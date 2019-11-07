@@ -1,4 +1,8 @@
 # Miscellaneous RF front-end circuits
+Here are the KiCad files for some RF amplifier PCB designs.
+
+Unless otherwise specified, the designs here are under the MIT license.
+
 ## wififem
 This is a 2.4 GHz TX and RX amplifier using a SE2611T WiFi front-end chip.
 It is intended to go between a LimeSDR and an antenna or a higher-powered
