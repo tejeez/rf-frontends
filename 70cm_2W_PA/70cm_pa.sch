@@ -37,17 +37,6 @@ F 3 "" H 3800 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J1
-U 1 1 5DAE4558
-P 950 1700
-F 0 "J1" H 878 1847 50  0000 C CNN
-F 1 "~" H 878 1847 50  0000 C CNN
-F 2 "70cm_pa:Pigtail" H 950 1700 50  0001 C CNN
-F 3 " ~" H 950 1700 50  0001 C CNN
-	1    950  1700
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR03
 U 1 1 5DAE4D8F
 P 950 1900
@@ -273,17 +262,6 @@ F 1 "L" H 7853 1905 50  0000 L CNN
 F 2 "Inductor_SMD:L_0805_2012Metric" H 7800 1950 50  0001 C CNN
 F 3 "~" H 7800 1950 50  0001 C CNN
 	1    7800 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_Coaxial J2
-U 1 1 5DB0A0E6
-P 8650 1700
-F 0 "J2" H 8750 1629 50  0000 L CNN
-F 1 "~" H 8750 1584 50  0000 L CNN
-F 2 "70cm_pa:Pigtail" H 8650 1700 50  0001 C CNN
-F 3 " ~" H 8650 1700 50  0001 C CNN
-	1    8650 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -897,17 +875,6 @@ $EndComp
 Wire Wire Line
 	6450 3750 7550 3750
 $Comp
-L Connector:Conn_Coaxial J6
-U 1 1 5DB26191
-P 900 5750
-F 0 "J6" H 828 5897 50  0000 C CNN
-F 1 "~" H 828 5897 50  0000 C CNN
-F 2 "70cm_pa:Pigtail" H 900 5750 50  0001 C CNN
-F 3 " ~" H 900 5750 50  0001 C CNN
-	1    900  5750
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x02 J5
 U 1 1 5DB408AC
 P 850 3600
@@ -1228,4 +1195,37 @@ Wire Wire Line
 Connection ~ 2850 1700
 Text Notes 8000 2750 0    50   ~ 0
 Pads for\noptional Bias-T\n(replace resistor\n with 100 pF\n capacitor if used)
+$Comp
+L Connector:Conn_Coaxial J6
+U 1 1 5DB26191
+P 900 5750
+F 0 "J6" H 828 5897 50  0000 C CNN
+F 1 "~" H 828 5897 50  0000 C CNN
+F 2 "70cm_pa:Pigtail" H 900 5750 50  0001 C CNN
+F 3 " ~" H 900 5750 50  0001 C CNN
+	1    900  5750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 5DB0A0E6
+P 8650 1700
+F 0 "J2" H 8750 1629 50  0000 L CNN
+F 1 "~" H 8750 1584 50  0000 L CNN
+F 2 "70cm_pa:Pigtail" H 8650 1700 50  0001 C CNN
+F 3 " ~" H 8650 1700 50  0001 C CNN
+	1    8650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 5DAE4558
+P 950 1700
+F 0 "J1" H 878 1847 50  0000 C CNN
+F 1 "~" H 878 1847 50  0000 C CNN
+F 2 "70cm_pa:Pigtail" H 950 1700 50  0001 C CNN
+F 3 " ~" H 950 1700 50  0001 C CNN
+	1    950  1700
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
