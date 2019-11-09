@@ -19,3 +19,10 @@ This is a 400-440 MHz power amplifier using a M68710L RF power module.
 The module is old but they were really cheap at Lutikoiden tuuletus.
 With a nominal input power of 20 mW (13 dBm), it can be driven directly
 from common SDRs.
+
+It is designed to be mounted on a heatsink, transferring heat through the PCB
+using a grid of vias under the amplifier module. This avoids the mechanical
+trouble of achieving a good RF contact between the PCB and the heatsink.
+At low duty cycles, it may even work without a heatsink.
+
+Note that the PCB is 1 mm thick.
