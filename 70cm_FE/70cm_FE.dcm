@@ -6,4 +6,10 @@ K SAW filter
 F https://abracon.com/Filters/SAW%20FILTERS/AFS434S3.pdf
 $ENDCMP
 #
+$CMP Jumper_3_Bridged12
+D Jumper, 3-pole, pins 1+2 closed/bridged
+K Jumper SPDT
+F ~
+$ENDCMP
+#
 #End Doc Library
