@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AFS434S3
+D 434MHz SAW filter
+K SAW filter
+F https://abracon.com/Filters/SAW%20FILTERS/AFS434S3.pdf
+$ENDCMP
+#
+#End Doc Library

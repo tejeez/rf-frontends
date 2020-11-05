@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name 70cm_pa)(type KiCad)(uri ${KIPRJMOD}/../70cm_2W_PA/70cm_pa.pretty)(options "")(descr ""))
+  (lib (name 70cm_FE)(type KiCad)(uri ${KIPRJMOD}/70cm_FE.pretty)(options "")(descr ""))
 )
