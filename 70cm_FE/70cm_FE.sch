@@ -406,18 +406,6 @@ Wire Wire Line
 	13600 800  13650 800 
 Connection ~ 13650 800 
 $Comp
-L Diode:BAT54C D8
-U 1 1 5FB57769
-P 12050 1100
-F 0 "D8" V 12004 1188 50  0000 L CNN
-F 1 "BAS70-05" V 12095 1188 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 12125 1225 50  0001 L CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Changjiang-Electronics-Tech-CJ-BAS70-05_C77300.pdf" H 11970 1100 50  0001 C CNN
-F 4 "C77300 (extended)" V 12050 1100 50  0001 C CNN "LCSC"
-	1    12050 1100
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R46
 U 1 1 5FB5F3A4
 P 12600 800
@@ -691,25 +679,25 @@ Connection ~ 6450 850
 $Comp
 L Comparator:LM393 U4
 U 2 1 5FAC7E0B
-P 13150 2400
-F 0 "U4" H 13150 2767 50  0000 C CNN
-F 1 "LM393" H 13150 2676 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 13150 2400 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-LM393DR2G_C7955.pdf" H 13150 2400 50  0001 C CNN
-F 4 "C7955" H 13150 2400 50  0001 C CNN "LCSC"
-	2    13150 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Comparator:LM393 U4
-U 1 1 5FAC6D87
 P 13150 1100
 F 0 "U4" H 13150 1467 50  0000 C CNN
 F 1 "LM393" H 13150 1376 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 13150 1100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-LM393DR2G_C7955.pdf" H 13150 1100 50  0001 C CNN
 F 4 "C7955" H 13150 1100 50  0001 C CNN "LCSC"
-	1    13150 1100
+	2    13150 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM393 U4
+U 1 1 5FAC6D87
+P 13150 2400
+F 0 "U4" H 13150 2767 50  0000 C CNN
+F 1 "LM393" H 13150 2676 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 13150 2400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-LM393DR2G_C7955.pdf" H 13150 2400 50  0001 C CNN
+F 4 "C7955" H 13150 2400 50  0001 C CNN "LCSC"
+	1    13150 2400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3877,4 +3865,16 @@ Text Notes 7200 4200 0    50   ~ 0
 Driver stage\n
 Text Notes 4550 7450 0    50   ~ 0
 Low-noise amplifier
+$Comp
+L Diode:BAT54C D8
+U 1 1 5FB57769
+P 12050 1100
+F 0 "D8" V 12004 1188 50  0000 L CNN
+F 1 "BAS70-05" V 12095 1188 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 12125 1225 50  0001 L CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Changjiang-Electronics-Tech-CJ-BAS70-05_C77300.pdf" H 11970 1100 50  0001 C CNN
+F 4 "C77300 (extended)" V 12050 1100 50  0001 C CNN "LCSC"
+	1    12050 1100
+	0    1    -1   0   
+$EndComp
 $EndSCHEMATC
