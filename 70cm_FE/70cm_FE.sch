@@ -721,12 +721,12 @@ $EndComp
 $Comp
 L 74xx:74HC14 U3
 U 3 1 5FB9502B
-P 15300 3000
-F 0 "U3" H 15300 3317 50  0000 C CNN
-F 1 "74HC14" H 15300 3226 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 15300 3000 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 15300 3000 50  0001 C CNN
-	3    15300 3000
+P 14600 1100
+F 0 "U3" H 14600 1417 50  0000 C CNN
+F 1 "74HC14" H 14600 1326 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 14600 1100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 14600 1100 50  0001 C CNN
+	3    14600 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1873,99 +1873,58 @@ $EndComp
 Text Notes 12650 9750 0    50   ~ 0
 Control logic.\nDiodes are  used for sequencing delays:\n\nWhen TX_ON goes high, LNA turns off first.\nAfter some delay, driver stage and PIN switch are turned on.\nPA bias starts ramping up at roughly the same time.\n\nWhen TX_ON goes low, PA bias starts ramping down first.\nAfter some delay, driver stage and PIN switch are turned off.\nAfter a bit more delay, LNA is turned on.\n\nOvertemperature protection only turns off the PA bias.
 $Comp
-L power:GND #PWR078
-U 1 1 5FF2D6AA
-P 14700 4250
-F 0 "#PWR078" H 14700 4000 50  0001 C CNN
-F 1 "GND" H 14705 4077 50  0000 C CNN
-F 2 "" H 14700 4250 50  0001 C CNN
-F 3 "" H 14700 4250 50  0001 C CNN
-	1    14700 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14700 4100 14700 4250
-Connection ~ 14700 4100
-Wire Wire Line
-	14700 3550 14700 4100
-Connection ~ 14700 3550
-Wire Wire Line
-	14700 3000 14700 3550
-$Comp
-L Device:R R67
-U 1 1 5FF1F4C3
-P 14850 4100
-F 0 "R67" V 15057 4100 50  0000 C CNN
-F 1 "1k" V 14966 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 14780 4100 50  0001 C CNN
-F 3 "~" H 14850 4100 50  0001 C CNN
-	1    14850 4100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R66
-U 1 1 5FF1EF1A
-P 14850 3550
-F 0 "R66" V 15057 3550 50  0000 C CNN
-F 1 "1k" V 14966 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 14780 3550 50  0001 C CNN
-F 3 "~" H 14850 3550 50  0001 C CNN
-	1    14850 3550
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R R65
 U 1 1 5FF1B48E
-P 14850 3000
-F 0 "R65" V 15057 3000 50  0000 C CNN
-F 1 "1k" V 14966 3000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 14780 3000 50  0001 C CNN
-F 3 "~" H 14850 3000 50  0001 C CNN
-	1    14850 3000
+P 13950 6500
+F 0 "R65" V 14157 6500 50  0000 C CNN
+F 1 "0" V 14066 6500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 13880 6500 50  0001 C CNN
+F 3 "~" H 13950 6500 50  0001 C CNN
+	1    13950 6500
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 15600 4100
-NoConn ~ 15600 3550
-NoConn ~ 15600 3000
+NoConn ~ 18800 5800
+NoConn ~ 18800 5250
+NoConn ~ 18800 4700
 Text Label 13800 5050 1    50   ~ 0
 ~PA_SEQ_OUT~
 Text Label 11800 4750 2    50   ~ 0
 ~OverTemp~
-Text Label 13700 6500 0    50   ~ 0
+Text Label 15650 6500 0    50   ~ 0
 LNA_EN
 Text Label 11800 8050 2    50   ~ 0
 TX_ON
 $Comp
 L 74xx:74HC14 U3
 U 6 1 5FB9866F
-P 14600 1100
-F 0 "U3" H 14600 1417 50  0000 C CNN
-F 1 "74HC14" H 14600 1326 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 14600 1100 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 14600 1100 50  0001 C CNN
-	6    14600 1100
+P 13400 5050
+F 0 "U3" H 13400 5367 50  0000 C CNN
+F 1 "74HC14" H 13400 5276 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 13400 5050 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 13400 5050 50  0001 C CNN
+	6    13400 5050
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC14 U3
 U 5 1 5FB97267
-P 15300 3550
-F 0 "U3" H 15300 3867 50  0000 C CNN
-F 1 "74HC14" H 15300 3776 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 15300 3550 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 15300 3550 50  0001 C CNN
-	5    15300 3550
+P 13400 7900
+F 0 "U3" H 13400 8217 50  0000 C CNN
+F 1 "74HC14" H 13400 8126 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 13400 7900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 13400 7900 50  0001 C CNN
+	5    13400 7900
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC14 U3
 U 4 1 5FB960A5
-P 15300 4100
-F 0 "U3" H 15300 4417 50  0000 C CNN
-F 1 "74HC14" H 15300 4326 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 15300 4100 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 15300 4100 50  0001 C CNN
-	4    15300 4100
+P 13400 6500
+F 0 "U3" H 13400 6817 50  0000 C CNN
+F 1 "74HC14" H 13400 6726 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 13400 6500 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 13400 6500 50  0001 C CNN
+	4    13400 6500
 	1    0    0    -1  
 $EndComp
 Text Label 13100 6500 1    50   ~ 0
@@ -1974,28 +1933,23 @@ Text Label 13100 7900 1    50   ~ 0
 PIN_SEQ_IN
 Text Label 13100 5050 1    50   ~ 0
 PA_SEQ_IN
-Text Label 15000 7650 0    50   ~ 0
+Text Label 15200 7650 0    50   ~ 0
 PIN_bias
-Text Label 15000 8150 0    50   ~ 0
+Text Label 15200 8150 0    50   ~ 0
 DRV_EN
-Connection ~ 13700 7900
 Wire Wire Line
 	13700 8150 13800 8150
-Wire Wire Line
-	13700 7900 13700 8150
 $Comp
 L Device:R R69
 U 1 1 5FDB3000
-P 14850 8150
-F 0 "R69" V 15057 8150 50  0000 C CNN
-F 1 "100" V 14966 8150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 14780 8150 50  0001 C CNN
-F 3 "~" H 14850 8150 50  0001 C CNN
-	1    14850 8150
+P 15050 8150
+F 0 "R69" V 15257 8150 50  0000 C CNN
+F 1 "100" V 15166 8150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 14980 8150 50  0001 C CNN
+F 3 "~" H 15050 8150 50  0001 C CNN
+	1    15050 8150
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	13700 7650 13700 7900
 Wire Wire Line
 	13800 7650 13700 7650
 $Comp
@@ -2068,12 +2022,12 @@ Wire Wire Line
 $Comp
 L 74xx:74HC14 U2
 U 3 1 5FBA6B6E
-P 14400 5050
-F 0 "U2" H 14400 5367 50  0000 C CNN
-F 1 "74HC14" H 14400 5276 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 14400 5050 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 14400 5050 50  0001 C CNN
-	3    14400 5050
+P 14500 7650
+F 0 "U2" H 14500 7967 50  0000 C CNN
+F 1 "74HC14" H 14500 7876 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 14500 7650 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 14500 7650 50  0001 C CNN
+	3    14500 7650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2292,45 +2246,34 @@ $EndComp
 $Comp
 L 74xx:74HC14 U2
 U 4 1 5FBC7D49
-P 13400 5050
-F 0 "U2" H 13400 5367 50  0000 C CNN
-F 1 "74HC14" H 13400 5276 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 13400 5050 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 13400 5050 50  0001 C CNN
-	4    13400 5050
+P 14400 5050
+F 0 "U2" H 14400 5367 50  0000 C CNN
+F 1 "74HC14" H 14400 5276 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 14400 5050 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 14400 5050 50  0001 C CNN
+	4    14400 5050
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC14 U2
 U 5 1 5FBC88EE
-P 13400 7900
-F 0 "U2" H 13400 8217 50  0000 C CNN
-F 1 "74HC14" H 13400 8126 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 13400 7900 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 13400 7900 50  0001 C CNN
-	5    13400 7900
+P 14500 8150
+F 0 "U2" H 14500 8467 50  0000 C CNN
+F 1 "74HC14" H 14500 8376 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 14500 8150 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 14500 8150 50  0001 C CNN
+	5    14500 8150
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R63
-U 1 1 5FBF5F78
-P 13950 8150
-F 0 "R63" V 14157 8150 50  0000 C CNN
-F 1 "0" V 14066 8150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 13880 8150 50  0001 C CNN
-F 3 "~" H 13950 8150 50  0001 C CNN
-	1    13950 8150
-	0    -1   -1   0   
 $EndComp
 $Comp
 L 74xx:74HC14 U2
 U 6 1 5FBC94AB
-P 13400 6500
-F 0 "U2" H 13400 6817 50  0000 C CNN
-F 1 "74HC14" H 13400 6726 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 13400 6500 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 13400 6500 50  0001 C CNN
-	6    13400 6500
+P 14550 6500
+F 0 "U2" H 14550 6817 50  0000 C CNN
+F 1 "74HC14" H 14550 6726 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 14550 6500 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 14550 6500 50  0001 C CNN
+	6    14550 6500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2360,24 +2303,24 @@ $EndComp
 $Comp
 L Device:R R68
 U 1 1 5FA4E498
-P 14850 7650
-F 0 "R68" V 15057 7650 50  0000 C CNN
-F 1 "100" V 14966 7650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 14780 7650 50  0001 C CNN
-F 3 "~" H 14850 7650 50  0001 C CNN
-	1    14850 7650
+P 15050 7650
+F 0 "R68" V 15257 7650 50  0000 C CNN
+F 1 "100" V 15166 7650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 14980 7650 50  0001 C CNN
+F 3 "~" H 15050 7650 50  0001 C CNN
+	1    15050 7650
 	0    -1   -1   0   
 $EndComp
 $Comp
 L 74xx:74HC14 U2
 U 2 1 5FA4C517
-P 14400 8150
-F 0 "U2" H 14400 8467 50  0000 C CNN
-F 1 "74HC14" H 14400 8376 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 14400 8150 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 14400 8150 50  0001 C CNN
-F 4 "C5605" H 14400 8150 50  0001 C CNN "LCSC"
-	2    14400 8150
+P 15250 6800
+F 0 "U2" H 15250 7117 50  0000 C CNN
+F 1 "74HC14" H 15250 7026 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 15250 6800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 15250 6800 50  0001 C CNN
+F 4 "C5605" H 15250 6800 50  0001 C CNN "LCSC"
+	2    15250 6800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2525,24 +2468,24 @@ Text Label 13700 7650 1    50   ~ 0
 ~PIN_SEQ_OUT~
 Text Label 14100 5050 1    50   ~ 0
 ~PA_EN_~
-Text Label 14700 8150 1    50   ~ 0
+Text Label 14900 8150 1    50   ~ 0
 DRV_EN1
-Text Label 14700 7650 1    50   ~ 0
+Text Label 14900 7650 1    50   ~ 0
 PIN_EN
-Text Label 14100 7650 1    50   ~ 0
+Text Label 14200 7650 1    50   ~ 0
 ~PIN_EN_~
-Text Label 14100 8150 1    50   ~ 0
+Text Label 14200 8150 1    50   ~ 0
 ~DRV_EN_~
 $Comp
 L 74xx:74HC14 U2
 U 1 1 5FA4B71B
-P 14400 7650
-F 0 "U2" H 14400 7967 50  0000 C CNN
-F 1 "74HC14" H 14400 7876 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 14400 7650 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 14400 7650 50  0001 C CNN
-F 4 "C5605" H 14400 7650 50  0001 C CNN "LCSC"
-	1    14400 7650
+P 15250 6250
+F 0 "U2" H 15250 6567 50  0000 C CNN
+F 1 "74HC14" H 15250 6476 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 15250 6250 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC14D-653_C5605.pdf" H 15250 6250 50  0001 C CNN
+F 4 "C5605" H 15250 6250 50  0001 C CNN "LCSC"
+	1    15250 6250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2981,7 +2924,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 8500 10550 8500
 Text Notes 8950 8100 0    50   ~ 0
-For better power handling, series coils are replaced\nwith high impedance microstrip lines.
+For better power handling, series coils are replaced\nwith high impedance microstrip lines,\n0.25 mm wide (TBC).
 $Comp
 L Device:D D4
 U 1 1 5F907E89
@@ -4029,4 +3972,52 @@ Text Label 4200 850  3    50   ~ 0
 REG_in
 Text Label 4500 1150 0    50   ~ 0
 REG_GND
+Text Label 13800 6500 1    50   ~ 0
+LNA_SEQ_OUT
+Wire Wire Line
+	13800 6500 13700 6500
+Text Label 14200 6500 1    50   ~ 0
+LNA_EN_
+Wire Wire Line
+	14250 6500 14100 6500
+Wire Wire Line
+	14950 6250 14950 6500
+Wire Wire Line
+	14850 6500 14950 6500
+Connection ~ 14950 6500
+Wire Wire Line
+	14950 6500 14950 6800
+Wire Wire Line
+	15550 6250 15550 6500
+Wire Wire Line
+	15650 6500 15550 6500
+Connection ~ 15550 6500
+Wire Wire Line
+	15550 6500 15550 6800
+Text Label 14950 6400 1    50   ~ 0
+~LNA_EN_~
+Wire Wire Line
+	13700 7650 13700 7900
+Wire Wire Line
+	14900 8150 14800 8150
+Wire Wire Line
+	14800 7650 14900 7650
+$Comp
+L Device:R R63
+U 1 1 5FBF5F78
+P 13950 8150
+F 0 "R63" V 14157 8150 50  0000 C CNN
+F 1 "0" V 14066 8150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 13880 8150 50  0001 C CNN
+F 3 "~" H 13950 8150 50  0001 C CNN
+	1    13950 8150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14100 7650 14200 7650
+Wire Wire Line
+	14100 8150 14200 8150
+Connection ~ 13700 7900
+Wire Wire Line
+	13700 7900 13700 8150
 $EndSCHEMATC
